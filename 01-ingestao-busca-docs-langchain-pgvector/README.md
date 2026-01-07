@@ -55,7 +55,7 @@ PDF_PATH=document.pdf
 The application supports multiple embedding and chat model providers:
 
 - **OpenAI** (`EMBEDDING_PROVIDER=openai`): Uses OpenAI's embedding models like `text-embedding-3-small` and chat model like `gpt-5-nano`
-- **Google** (`EMBEDDING_PROVIDER=google`): Uses Google's Generative AI embedding models like `models/text-embedding-004` and chat model like `gemini-flash-2.5-flash-lite`
+- **Google** (`EMBEDDING_PROVIDER=google`): Uses Google's Generative AI embedding models like `gemini-embedding-001` and chat model like `gemini-flash-2.5-flash-lite`
 
 Simply set the `EMBEDDING_PROVIDER` variable to your preferred provider and ensure the corresponding API key and model are configured.
 
@@ -84,20 +84,12 @@ docker-compose up -d
 Now you need to ingest the document file into the vector database executing the related Python file:
 
 ````bash
-python src/ingest.py
+python run_ingest.py
 ````
 
 Finally, execute the the Python chat file to start the flow:
 
 ````bash
-python src/chat.py
+python run_chat.py
 `````
 ---
-
-
-
-
-
-
-
-

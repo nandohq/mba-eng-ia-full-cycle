@@ -1,4 +1,3 @@
-PROMPT_TEMPLATE = """
 CONTEXTO:
 {contexto}
 
@@ -23,7 +22,4 @@ PERGUNTA DO USUÁRIO:
 {pergunta}
 
 RESPONDA A "PERGUNTA DO USUÁRIO"
-"""
 
-def search_prompt(question=None):
-    pass
